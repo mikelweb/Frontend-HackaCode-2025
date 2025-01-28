@@ -1,5 +1,5 @@
 # Frontend-HackaCode-2025
-Frontend desarrollado con Angular 19 para la Hackathon organizada por TodoCode
+Frontend desarrollado con Angular 19 para la Hackathon organizada por [TodoCode](https://www.youtube.com/channel/UCz0EXCSvMwYKruljsZjCOzw)
 
 Vídeo de descripción del proyecto a realizar
 
