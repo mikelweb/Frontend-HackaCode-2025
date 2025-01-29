@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { MedicalServiceComponent } from './medical-service/medical-service-list/medical-service.component';
+import { MedicalServiceListComponent } from './medical-service/medical-service-list/medical-service-list.component';
 import { LoginComponent } from './login/login.component';
 import { MedicalServiceAddComponent } from './medical-service/medical-service-add/medical-service-add.component';
 import { MedicalServiceEditComponent } from './medical-service/medical-service-edit/medical-service-edit.component';
@@ -11,7 +11,7 @@ export const routes: Routes = [
     },
     {
         path: 'services',
-        component: MedicalServiceComponent,
+        component: MedicalServiceListComponent,
         children: [
             {
                 path: 'add',

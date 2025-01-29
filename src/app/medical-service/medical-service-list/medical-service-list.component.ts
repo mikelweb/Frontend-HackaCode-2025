@@ -6,10 +6,10 @@ import { NgFor } from '@angular/common';
 @Component({
   selector: 'app-medical-service',
   imports: [NgFor],
-  templateUrl: './medical-service.component.html',
-  styleUrl: './medical-service.component.scss'
+  templateUrl: './medical-service-list.component.html',
+  styleUrl: './medical-service-list.component.scss'
 })
-export class MedicalServiceComponent implements OnInit {
+export class MedicalServiceListComponent implements OnInit {
 
     private medicalServices : MedicalServiceModel[] = [];
 
