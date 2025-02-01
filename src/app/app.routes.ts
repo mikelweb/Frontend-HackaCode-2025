@@ -12,15 +12,12 @@ export const routes: Routes = [
     {
         path: 'services',
         component: MedicalServiceListComponent,
-        children: [
-            {
-                path: 'add',
-                component: MedicalServiceAddComponent,
-            },
-            {   path: 'edit',
-                component: MedicalServiceEditComponent,
-            }
-        ]
-
+    },
+    {
+        path: 'services/add',
+        component: MedicalServiceAddComponent,
+    },
+    {   path: 'services/edit/:id',
+        component: MedicalServiceEditComponent,
     }
 ];

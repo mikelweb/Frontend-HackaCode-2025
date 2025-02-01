@@ -1,12 +1,26 @@
 [
     {
-        "id_persona": 1,
-        "nombre": "Pepito",
-        "apellido": "Pérez",
-        "dni": "12345678X",
-        "fecha_nac": "2019-12-31T23:00:00.000+00:00",
-        "email": "",
-        "telefono": "987654321",
-        "direccion": "blah blah"
+        "codigo_servicio": 1,
+        "nombre": "Oftalmología",
+        "descripcion": "Blah blah blah",
+        "precio": 125
+    },
+    {
+        "codigo_servicio": 2,
+        "nombre": "Pediatría",
+        "descripcion": "Blah blah blah",
+        "precio": 100
+    },
+    {
+        "codigo_servicio": 3,
+        "nombre": "Cirujía",
+        "descripcion": "Blah blah blah",
+        "precio": 150
+    },
+    {
+        "codigo_servicio": 4,
+        "nombre": "Cardiología",
+        "descripcion": "Blah blah blah",
+        "precio": 95
     }
 ]
