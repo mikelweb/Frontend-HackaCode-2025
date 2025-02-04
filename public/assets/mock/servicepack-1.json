@@ -1,0 +1,18 @@
+{
+    "codigo_paquete": 1,
+    "lista_servicios_incluidos": [
+        {
+            "codigo_servicio": 3,
+            "nombre": "Cirujía",
+            "descripcion": "Blah blah blah",
+            "precio": 150
+        },
+        {
+            "codigo_servicio": 4,
+            "nombre": "Cardiología",
+            "descripcion": "Blah blah blah",
+            "precio": 95
+        }        
+    ],
+    "precio_paquete": 209
+}

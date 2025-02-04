@@ -1,0 +1,25 @@
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Código paquete</th>
+			<th>servicios</th>
+			<th>Precio paquete</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let servicePack of getServicePacks()">
+			<td>{{ servicePack?.codigo_paquete }}</td>
+			<td>
+                <div *ngFor="let servicios of servicePack?.lista_servicios_incluidos">
+                    {{ servicios.nombre }}
+                </div>
+            </td>
+			
+			<td>{{ servicePack?.precio_paquete }}</td>
+			<td>
+				<i class="bi bi-trash" (click)="deleteServicePack(servicePack.codigo_paquete)"></i>
+				<i class="bi bi-pencil" (click)="editServicePack(servicePack.codigo_paquete)"></i>
+			</td>
+		</tr>
+	</tbody>
+</table>

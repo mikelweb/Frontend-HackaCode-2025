@@ -1,0 +1,21 @@
+<form class="col-md-4">
+    <div class="">
+        <label for="codigo_paquete" class="form-label">Id paciente</label>
+        <input type="text" class="form-control" id="codigo_paquete" value="{{ codigo_paquete }}" readonly disabled>
+    </div>
+    <div class="" *ngIf="lista_todos_servicios.length > 0">
+        <label for="lista_servicios_incluidos" class="form-label">Servicios incluidos</label>
+        <select name="lista_servicios_incluidos"  multiple="multiple" class="form-control">
+            <option *ngFor="let servicio of lista_todos_servicios" [value]="servicio.codigo_servicio" [selected]="isIncluded(servicio)">
+                {{ servicio.nombre }}
+            </option>
+        </select>
+    </div>
+    <div class="">
+        <label for="precio_paquete" class="form-label">Precio paquete</label>
+        <input type="text" class="form-control" id="precio_paquete" name="precio_paquete" [(ngModel)]="precio_paquete" required>
+    </div>
+    <div class="">
+        <input type="submit" class="btn btn-primary" value="Guardar" (click)="updateServicePack()">
+    </div>
+</form>

@@ -6,6 +6,9 @@ import { MedicalServiceEditComponent } from './medical-service/medical-service-e
 import { PatientListComponent } from './patient/patient-list/patient-list.component';
 import { PatientEditComponent } from './patient/patient-edit/patient-edit.component';
 import { PatientAddComponent } from './patient/patient-add/patient-add.component';
+import { ServicePackListComponent } from './service-pack/service-pack-list/service-pack-list.component';
+import { ServicePackAddComponent } from './service-pack/service-pack-add/service-pack-add.component';
+import { ServicePackEditComponent } from './service-pack/service-pack-edit/service-pack-edit.component';
 
 export const routes: Routes = [
     {
@@ -22,6 +25,17 @@ export const routes: Routes = [
     },
     {   path: 'services/edit/:id',
         component: MedicalServiceEditComponent,
+    },
+    {
+        path: 'service-packs',
+        component: ServicePackListComponent,
+    },
+    {
+        path: 'service-packs/add',
+        component: ServicePackAddComponent,
+    },
+    {   path: 'service-packs/edit/:id',
+        component: ServicePackEditComponent,
     },
     {
         path: 'patients',
