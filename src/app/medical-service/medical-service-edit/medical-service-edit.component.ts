@@ -2,12 +2,11 @@ import { ChangeDetectorRef, Component } from '@angular/core';
 import { MedicalServiceModel } from '../../model/medical-service.model';
 import { MedicalServicesService } from '../../services/medical-services.service';
 import { FormsModule } from '@angular/forms';
-import { NgIf } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-medical-service-edit',
-  imports: [FormsModule, NgIf],
+  imports: [FormsModule],
   templateUrl: './medical-service-edit.component.html',
   styleUrl: './medical-service-edit.component.scss'
 })

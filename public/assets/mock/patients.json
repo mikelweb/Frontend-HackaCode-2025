@@ -1,10 +1,11 @@
 [
     {
         "id_persona": 1,
+        "id_paciente": 1,
         "nombre": "Pepito",
         "apellido": "Pérez",
         "dni": "12345678X",
-        "fecha_nac": "2019-12-31T23:00:00.000+00:00",
+        "fecha_nac": "2001-12-31",
         "email": "",
         "telefono": "987654321",
         "direccion": "blah blah"

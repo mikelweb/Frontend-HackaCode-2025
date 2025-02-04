@@ -1,23 +1,21 @@
-<ng-container *ngIf="codigo_servicio != null && codigo_servicio != undefined">
-    <form>
-        <div class="">
-            <label for="codigo_servicio" class="form-label">Código servicio</label>
-            <input type="text" class="form-control" id="codigo_servicio" value="{{ codigo_servicio }}" readonly>
-        </div>
-        <div class="">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
-        </div>
-        <div class="">
-            <label for="descripcion" class="form-label">Descripción</label>
-            <textarea class="form-control" id="descripcion" required>{{descripcion}}</textarea>
-        </div>
-        <div class="">
-            <label for="precio" class="form-label">Precio</label>
-            <input type="number" class="form-control" id="precio" name="precio" [(ngModel)]="precio" required>
-        </div>
-        <div class="">
-            <input type="submit" class="btn btn-primary" value="Guardar" (click)="updateMedicalService()">
-        </div>
-    </form>
-</ng-container>
+<form class="col-md-4">
+    <div class="">
+        <label for="codigo_servicio" class="form-label">Código servicio</label>
+        <input type="text" class="form-control" id="codigo_servicio" value="{{ codigo_servicio }}" readonly disabled>
+    </div>
+    <div class="">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
+    </div>
+    <div class="">
+        <label for="descripcion" class="form-label">Descripción</label>
+        <textarea class="form-control" id="descripcion" required>{{descripcion}}</textarea>
+    </div>
+    <div class="">
+        <label for="precio" class="form-label">Precio</label>
+        <input type="number" class="form-control" id="precio" name="precio" [(ngModel)]="precio" required>
+    </div>
+    <div class="">
+        <input type="submit" class="btn btn-primary" value="Guardar" (click)="updateMedicalService()">
+    </div>
+</form>

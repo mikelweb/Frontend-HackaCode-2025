@@ -3,7 +3,6 @@ import { MedicalServiceModel } from '../../model/medical-service.model';
 import { NgFor, NgIf } from '@angular/common';
 import { MedicalServicesService } from '../../services/medical-services.service';
 import { Router } from '@angular/router';
-import { response } from 'express';
 
 @Component({
   selector: 'app-medical-service',

@@ -1,0 +1,35 @@
+<ng-container *ngIf="getPatients()">
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>ID paciente</th>
+				<th>ID persona</th>
+				<th>Nombre</th>
+				<th>Apellido</th>
+				<th>DNI</th>
+				<th>Fecha Nac</th>
+				<th>Email</th>
+				<th>Teléfono</th>
+				<th>Dirección</th>
+				<th>Acciones</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let patient of getPatients()">
+				<td>{{ patient?.id_paciente }}</td>
+				<td>{{ patient?.id_persona }}</td>
+				<td>{{ patient?.nombre }}</td>
+				<td>{{ patient?.apellido }}</td>
+				<td>{{ patient?.dni }}</td>
+				<td>{{ patient?.fecha_nac }}</td>
+				<td>{{ patient?.email }}</td>
+				<td>{{ patient?.telefono }}</td>
+				<td>{{ patient?.direccion }}</td>
+				<td>
+					<i class="bi bi-trash" (click)="deletePatient(patient.id_paciente)"></i>
+					<i class="bi bi-pencil" (click)="editPatient(patient.id_paciente)"></i>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</ng-container>
