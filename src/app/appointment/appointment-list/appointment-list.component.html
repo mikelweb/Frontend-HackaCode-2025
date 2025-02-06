@@ -1,0 +1,30 @@
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>#</th>
+			<th>Fecha</th>
+			<th>Hora</th>
+			<th>Paciente</th>
+			<th>Médico</th>
+			<th>Servicio o paquete</th>
+			<th>Precio</th>
+			<th>Pagado</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let appointment of getAppointments()">
+			<td>{{ appointment?.id }}</td>
+			<td>{{ appointment?.fecha_consulta }}</td>
+			<td>{{ appointment?.hora_consulta }}</td>
+			<td>{{ appointment?.un_paciente }}</td>
+			<td>{{ appointment?.un_medico }}</td>
+			<td>{{ appointment?.id_servicio_o_paquete }}</td>
+			<td>{{ appointment?.monto_total }}</td>
+			<td>{{ appointment?.pagado_o_no }}</td>
+			<td>
+				<i class="bi bi-trash" (click)="deleteAppointment(appointment.id)"></i>
+				<i class="bi bi-pencil" (click)="editAppointment(appointment.id)"></i>
+			</td>
+		</tr>
+	</tbody>
+</table>
