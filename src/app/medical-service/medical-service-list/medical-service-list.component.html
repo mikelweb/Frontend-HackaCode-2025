@@ -1,25 +1,23 @@
-<ng-container *ngIf="getMedicalServices()">
-	<table class="table table-striped">
-		<thead>
-			<tr>
-				<th>#</th>
-				<th>Nombre</th>
-				<th>Descripción</th>
-				<th>Precio</th>
-				<th>Acciones</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr *ngFor="let service of getMedicalServices()">
-				<td>{{ service?.codigo_servicio }}</td>
-				<td>{{ service?.nombre }}</td>
-				<td>{{ service?.descripcion }}</td>
-				<td>{{ service?.precio }}</td>
-				<td>
-					<i class="bi bi-trash" (click)="deleteService(service.codigo_servicio)"></i>
-					<i class="bi bi-pencil" (click)="editService(service.codigo_servicio)"></i>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</ng-container>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>#</th>
+			<th>Nombre</th>
+			<th>Descripción</th>
+			<th>Precio</th>
+			<th>Acciones</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let service of getMedicalServices()">
+			<td>{{ service?.codigo_servicio }}</td>
+			<td>{{ service?.nombre }}</td>
+			<td>{{ service?.descripcion }}</td>
+			<td>{{ service?.precio }}</td>
+			<td>
+				<i class="bi bi-trash" (click)="deleteService(service.codigo_servicio)"></i>
+				<i class="bi bi-pencil" (click)="editService(service.codigo_servicio)"></i>
+			</td>
+		</tr>
+	</tbody>
+</table>

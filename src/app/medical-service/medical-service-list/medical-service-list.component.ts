@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { MedicalServiceModel } from '../../model/medical-service.model';
-import { NgFor, NgIf } from '@angular/common';
+import { NgFor } from '@angular/common';
 import { MedicalServicesService } from '../../services/medical-services.service';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-medical-service',
-  imports: [NgFor, NgIf],
+  imports: [NgFor],
   templateUrl: './medical-service-list.component.html',
   styleUrl: './medical-service-list.component.scss'
 })
