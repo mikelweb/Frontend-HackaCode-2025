@@ -1,0 +1,22 @@
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>#</th>
+			<th>Especialidad</th>
+			<th>Turnos disponibles</th>
+			<th>Sueldo</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let doctor of getDoctors()">
+			<td>{{ doctor?.id_doctor }}</td>
+			<td>{{ doctor?.especialidad }}</td>
+			<td>{{ doctor?.turnos_disponibles }}</td>
+			<td>{{ doctor?.sueldo }}</td>
+			<td>
+				<i class="bi bi-trash" (click)="deleteDoctor(doctor.id_doctor)"></i>
+				<i class="bi bi-pencil" (click)="editDoctor(doctor.id_doctor)"></i>
+			</td>
+		</tr>
+	</tbody>
+</table>

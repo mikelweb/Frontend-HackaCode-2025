@@ -12,6 +12,9 @@ import { ServicePackEditComponent } from './service-pack/service-pack-edit/servi
 import { AppointmentListComponent } from './appointment/appointment-list/appointment-list.component';
 import { AppointmentAddComponent } from './appointment/appointment-add/appointment-add.component';
 import { AppointmentEditComponent } from './appointment/appointment-edit/appointment-edit.component';
+import { DoctorListComponent } from './doctor/doctor-list/doctor-list.component';
+import { DoctorAddComponent } from './doctor/doctor-add/doctor-add.component';
+import { DoctorEditComponent } from './doctor/doctor-edit/doctor-edit.component';
 
 export const routes: Routes = [
     {
@@ -50,6 +53,17 @@ export const routes: Routes = [
     },
     {   path: 'patients/edit/:id',
         component: PatientEditComponent,
+    },
+    {
+        path: 'doctors',
+        component: DoctorListComponent,
+    },
+    {
+        path: 'doctors/add',
+        component: DoctorAddComponent,
+    },
+    {   path: 'doctors/edit/:id',
+        component: DoctorEditComponent,
     },
     {
         path: 'appointments',
