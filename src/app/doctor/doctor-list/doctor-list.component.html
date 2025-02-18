@@ -1,7 +1,15 @@
 <table class="table table-striped">
 	<thead>
 		<tr>
-			<th>#</th>
+			<th>id_doctor</th>
+			<th>id_persona</th>
+			<th>nombre</th>
+			<th>apellido</th>
+			<th>dni</th>
+			<th>fecha_nac</th>
+			<th>email</th>
+			<th>telefono</th>
+			<th>direccion</th>
 			<th>Especialidad</th>
 			<th>Turnos disponibles</th>
 			<th>Sueldo</th>
@@ -10,6 +18,14 @@
 	<tbody>
 		<tr *ngFor="let doctor of getDoctors()">
 			<td>{{ doctor?.id_doctor }}</td>
+			<td>{{ doctor?.id_persona }}</td>
+			<td>{{ doctor?.nombre }}</td>
+			<td>{{ doctor?.apellido }}</td>
+			<td>{{ doctor?.dni }}</td>
+			<td>{{ doctor?.fecha_nac }}</td>
+			<td>{{ doctor?.email }}</td>
+			<td>{{ doctor?.telefono }}</td>
+			<td>{{ doctor?.direccion }}</td>
 			<td>{{ doctor?.especialidad }}</td>
 			<td>{{ doctor?.turnos_disponibles }}</td>
 			<td>{{ doctor?.sueldo }}</td>

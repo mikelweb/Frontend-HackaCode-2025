@@ -1,3 +1,8 @@
-form {
+.form {
     margin: 0 auto;
+
+    input,
+    textarea {
+        margin-bottom: 20px;
+    }
 }
