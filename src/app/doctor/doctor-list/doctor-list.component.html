@@ -22,7 +22,7 @@
 			<td>{{ doctor?.nombre }}</td>
 			<td>{{ doctor?.apellido }}</td>
 			<td>{{ doctor?.dni }}</td>
-			<td>{{ doctor?.fecha_nac }}</td>
+			<td>{{ doctor?.fecha_nac | date: 'dd/MM/yyyy'}}</td>
 			<td>{{ doctor?.email }}</td>
 			<td>{{ doctor?.telefono }}</td>
 			<td>{{ doctor?.direccion }}</td>

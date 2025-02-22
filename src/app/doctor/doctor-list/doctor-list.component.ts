@@ -1,4 +1,4 @@
-import { NgFor } from '@angular/common';
+import { DatePipe, NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { DoctorModel } from '../../model/doctor.model';
 import { DoctorService } from '../../services/doctor.service';
@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-doctor-list',
-  imports: [NgFor],
+  imports: [NgFor, DatePipe],
   templateUrl: './doctor-list.component.html',
   styleUrl: './doctor-list.component.scss'
 })

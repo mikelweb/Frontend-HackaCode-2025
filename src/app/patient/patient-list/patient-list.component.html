@@ -20,7 +20,7 @@
 			<td>{{ patient?.nombre }}</td>
 			<td>{{ patient?.apellido }}</td>
 			<td>{{ patient?.dni }}</td>
-			<td>{{ patient?.fecha_nac }}</td>
+			<td>{{ patient?.fecha_nac | date: 'dd/MM/yyyy'}}</td>
 			<td>{{ patient?.email }}</td>
 			<td>{{ patient?.telefono }}</td>
 			<td>{{ patient?.direccion }}</td>
