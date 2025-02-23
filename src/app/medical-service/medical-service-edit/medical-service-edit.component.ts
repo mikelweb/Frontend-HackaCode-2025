@@ -39,11 +39,13 @@ export class MedicalServiceEditComponent implements MedicalServiceModel {
     public updateMedicalService() : void {
         // Call service
         let medicalService : MedicalServiceModel = {
-            codigo_servicio : this.codigo_servicio,
-            nombre : this.nombre,
-            descripcion : this.descripcion,
-            precio : this.precio
+            codigo_servicio: this.codigo_servicio,
+            nombre: this.nombre,
+            descripcion: this.descripcion,
+            precio: this.precio
         };
-        this.medicalServiceService.updateMedicalService(medicalService);
+        this.medicalServiceService.updateMedicalService(medicalService).subscribe(response => {
+            console.log(response)
+        });
     }
 }

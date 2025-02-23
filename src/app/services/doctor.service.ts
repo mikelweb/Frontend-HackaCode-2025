@@ -28,6 +28,11 @@ export class DoctorService {
     return this.http.put<boolean>(url, doctor);
   }
 
+  public addDoctor(doctor : DoctorModel) : Observable<boolean> {
+    let url : string = 'http://localhost:8080/api/v1/doctors/';
+    return this.http.post<boolean>(url, doctor);
+  }
+
   public deleteDoctor(doctorId : number) : Observable<boolean> {
     let url : string = 'http://localhost:8080/api/v1/doctors/' + doctorId;
     return this.http.delete<boolean>(url);

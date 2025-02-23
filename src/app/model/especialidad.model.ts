@@ -1,5 +1,5 @@
 export enum Especialidad {
-    CARDIOLOGÍA,
-    DERMATOLOGÍA,
-    PEDIATRÍA
+    CARDIOLOGÍA = "CARDIOLOGÍA",
+    DERMATOLOGÍA = "DERMATOLOGÍA",
+    PEDIATRÍA = "PEDIATRÍA"
 }
